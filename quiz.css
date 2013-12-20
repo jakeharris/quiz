@@ -1,0 +1,102 @@
+﻿.quiz {
+    position: relative;
+    padding-top:2rem;
+}
+.quiz::selection{
+    background-color: transparent;
+}
+
+.quiz-topic {
+
+}
+.quiz-question {
+
+}
+.quiz-answers {
+
+}
+.quiz-arrow {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 10rem;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+}
+    .quiz-arrow::selection {
+        background-color: transparent;
+    }
+    .quiz-arrow:hover {
+        background: #404040;
+    }
+.quiz-arrow--left {
+    top: 0;
+    left: 0;
+}
+.quiz-arrow--right {
+    float: right;
+    top: 0;
+    left: 52%;
+}
+
+.quiz-scene {
+    display: block;
+}
+
+.quiz-scene.title {
+    display: none;
+}
+.title-header {
+
+}
+.title-start {
+
+}
+.title-continue {
+
+}
+
+.quiz-scene.progress {
+
+}
+.progress-topic {
+
+}
+.progress-question {
+
+}
+.progress-answer {
+
+}
+.progress-bar {
+
+}
+
+@media (max-width: 985px) {
+    .quiz-arrow {
+        position: absolute;
+        padding: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+        top: 16rem;
+    }
+    .quiz-arrow--left {
+        left: 25rem;
+        padding-right: 7.5rem;
+    }
+    .quiz-arrow--right {
+        float: none;
+        left: 36.5rem;
+        padding-left: 7.5rem;
+    }
+}
+@media (max-width: 520px) {
+    .quiz-arrow--left {
+        left: 3rem;
+    }
+    .quiz-arrow--right {
+        left: 14.6rem;
+    }
+}
